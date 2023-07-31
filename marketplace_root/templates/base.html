@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +13,7 @@
         <div class="container">
           <div class="header-container">
             <img
-              src="C:\Users\turtl\Desktop\Программирование\Marketplace_project\marketplace_root\marketplace\static\img\logo_wb.svg"
+              src="{% static 'img/logo_wb.svg' %}"
               alt="Icon: Logo Willberries"
               class="logo"
             />
@@ -27,7 +30,7 @@
             </div>
             <!-- /.navbar -->
             <button class="bin">
-              <img src="img/Cart.svg" alt="Icon: Cart" />
+              <img src="{% static 'img/cart.svg' %}" alt="Icon: Cart" />
               <span>Cart</span>
             </button>
           </div>
@@ -39,7 +42,7 @@
       <footer class="footer">
         <div class="container">
             <div class="footer-container">
-                <div class="footer-contaier--up">
+                <div class="footer-container--up">
                     <div class="footer__links">
                         <a href="#" class="links__shop">Shop</a>
                         <a href="#" class="links__about">About As</a>
@@ -53,41 +56,50 @@
                     <div class="footer__social">
                         <p class="social__word">Follow Us</p>
                         <a href="#" class="social__link">
-                            <img src="" alt="Icon: Facebook">
+                            <img src="{% static 'img/facebook.svg' %}"
+                                 alt="Icon: Facebook">
                         </a>
                         <a href="#" class="social__link">
-                            <img src="" alt="Icon: Twitter">
+                            <img src="{% static 'img/twitter.svg' %}"
+                                 alt="Icon: Twitter">
                         </a>
                         <a href="#" class="social__link">
-                            <img src="" alt="Icon: Instagram">
+                            <img src="{% static 'img/instagram.svg' %}"
+                                 alt="Icon: Instagram">
                         </a>
                     </div>
                     <!-- /.footer__social -->
     
                     <p class="copyright">© 2019 Universal UI Kit</p>
                 </div>
-                <!-- /.footer-contaier--up -->
+                <!-- /.footer-container--up -->
 
                 <div class="footer-container__line"></div>
                 <!-- /.footer-container__line -->
 
                 <div class="footer-container--down">
                     <a href="#" class="links__visa">
-                        <img src="" alt="Icon: Visa">
+                        <img src="{% static 'img/visa.svg' %}"
+                             alt="Icon: Visa">
                     </a>
                     <a href="#" class="links__mastercard">
-                        <img src="" alt="Icon: MasterCard">
+                        <img src="{% static 'img/mastercard.svg' %}"
+                             alt="Icon: MasterCard">
                     </a>
                     <a href="#" class="links__paypal">
-                        <img src="" alt="Icon: PayPal">
+                        <img src="{% static 'img/paypal.svg' %}"
+                             alt="Icon: PayPal">
                     </a>
                     <a href="#" class="links__bitcoin">
-                        <img src="" alt="Icon: bitcoin">
+                        <img src="{% static 'img/bitcoin.svg' %}"
+                             alt="Icon: bitcoin">
                     </a>
 
                     <button class="button-top">
                         <p class="button-name">Top</p>
-                        <img src="" alt="Icon: Arrow top" class="button-top">
+                        <img src="{% static 'img/arrow-top.svg' %}"
+                             alt="Icon: Arrow top"
+                             class="button-top">
                     </button>
                 </div>
                 <!-- /.footer-container--down -->
